@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shianne Durdin — Vision Impairment Support Coach</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <style>
+    :root {
+      --base-font: 20px;
+      --max-font: 48px;
+      --min-font: 16px;
+      --bg: #ffffff;
+      --fg: #000000;
+      --link: #0033cc;
+      --focus: #ffab00;
+      --border: #111111;
+      --gap: 2rem;
+    }
+    html { font-size: var(--base-font); }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+    .skip-link:focus {
+      position: static;
+      background: var(--fg);
+      color: var(--bg);
+      padding: 0.5rem;
+    }
+    header, main, footer {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    h1, h2, h3 { line-height: 1.3; margin: 1rem 0 0.5rem; }
+    p, li { margin: 0.4rem 0; }
+    a { color: var(--link); }
+    a:focus, button:focus, iframe:focus { outline: 3px solid var(--focus); }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .brand img {
+      width: 72px; height: 72px;
+      border: 2px solid var(--border);
+    }
+    .controls { margin-top: 0.75rem; display: flex; gap: 0.5rem; }
+    .controls button {
+      padding: 0.5rem 0.75rem;
+      border: 2px solid var(--border);
+      background: #f2f2f2;
+    }
+    .section { margin-top: var(--gap); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="brand">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'><rect width='160' height='160' fill='white'/><circle cx='80' cy='80' r='60' stroke='black' stroke-width='6' fill='none'/><circle cx='80' cy='80' r='18' fill='black'/></svg>" alt="Logo: stylised black eye icon.">
+      <div>
+        <h1>Shianne Durdin</h1>
+        <p>Blindness Is A Different Kind of Vision</p>
+      </div>
+    </div>
+    <div class="controls" aria-label="Font size controls">
+      <button type="button" id="smaller">A−</button>
+      <button type="button" id="reset">Reset</button>
+      <button type="button" id="bigger">A+</button>
+      <span id="font-status" role="status" aria-live="polite"></span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <h2>Description</h2>
+      <p>As a child, I was fortunate ... (your description text here) ... it does not mean lack of vision.</p>
+      <p>Online platform Zoom will be used for all appointments and programs.</p>
+    </section>
+
+    <section class="section">
+      <h2>Programs</h2>
+      <h3>6 week introduction to navigating a computer using JAWS</h3>
+      <p>This one-on-one online program ...</p>
+
+      <h3>6 week introduction to using iPad and iPhone with VoiceOver</h3>
+      <p>This one-on-one online program ...</p>
+
+      <h3>8 week Exploring Pathways program</h3>
+      <p>This one-on-one online program ...</p>
+
+      <h3>4 week introduction to Basic Braille</h3>
+      <p>This one-on-one online program ...</p>
+
+      <p><strong>Note:</strong> Every program can be modified ...</p>
+      <p>You can also book individual sessions ...</p>
+    </section>
+
+    <section class="section">
+      <h2>If You Book an Individual Session</h2>
+      <p><strong>Note:</strong> This applies only if you are booking an individual session separate from the programs listed above.</p>
+      <p>Each appointment will vary ...</p>
+    </section>
+
+    <section class="section">
+      <h2>Availability and Hours</h2>
+      <ul>
+        <li>Monday: 4 PM–8 PM</li>
+        <li>Tuesday: Unavailable</li>
+        <li>Wednesday: 4 PM–7 PM</li>
+        <li>Thursday: 4 PM–8:30 PM</li>
+        <li>Friday: 4 PM–6:30 PM</li>
+        <li>Saturday: 4 PM–8 PM</li>
+        <li>Sunday: 10 AM–5 PM</li> </ul>
+      <p>All times are Australian Central Standard Time.</p>
+    </section>
+
+    <section class="section">
+      <h2>Registration</h2>
+      <p>Fill out the form below to register for a session or program. Your response will be forwarded to me via email and I will contact you within 7 business days.</p>
+      <iframe title="Registration form" src="https://docs.google.com/forms/d/e/1FAIpQLSe9mwoFYklA6rcwiCISmw88I4VYha0BRCZm6GT8J6CEi1qwTA/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <section class="section">
+      <h2>Get in Contact</h2>
+      <p>If you have any feedback or inquiries please email:</p>
+      <p><a href="mailto:shianne.blvcoach@gmail.com">shianne.blvcoach@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Disclaimer: I do not currently hold any psychology, youth work or counselling qualifications. I am someone who seeks to share knowledge and independence tips with the next generation of people who are blind or have low vision through personal experience.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const html = document.documentElement;
+      const status = document.getElementById('font-status');
+      const smaller = document.getElementById('smaller');
+      const bigger = document.getElementById('bigger');
+      const reset  = document.getElementById('reset');
+
+      function currentSize() {
+        return parseInt(window.getComputedStyle(html).fontSize);
+      }
+      function setSize(px) {
+        const min = 16, max = 48;
+        const clamped = Math.max(min, Math.min(px, max));
+        html.style.fontSize = clamped + 'px';
+        status.textContent = 'Font size ' + clamped + 'px';
+      }
+
+      smaller.addEventListener('click', () => setSize(currentSize() - 2));
+      bigger.addEventListener('click', () => setSize(currentSize() + 2));
+      reset.addEventListener('click', () => setSize(20));
+      setSize(currentSize()); })();
+  </script>
+</body>
+</html>
