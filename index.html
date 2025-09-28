@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Shianne Durdin – Vision Impairment Support Coach</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#000;
+      --fg:#fff;
+      --accent:#00ffd0;
+      --maxw:46rem;
+      --base-font:20px; /* buttons can raise to 48px */
+      --line:1.7;
+    }
+    html{font-size:var(--base-font);line-height:var(--line);-webkit-text-size-adjust:100%;}
+    body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",Arial,sans-serif;}
+    a{color:var(--accent);}
+    a:focus,button:focus{outline:3px solid var(--accent);outline-offset:3px;}
+
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:1rem;}
+    .skip{position:absolute;left:-9999px;top:-9999px;background:var(--accent);color:#000;padding:.6rem .9rem;border-radius:.4rem;text-decoration:none;}
+    .skip:focus{left:1rem;top:1rem;z-index:1000;}
+
+    header.topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-block:.5rem 1rem;border-bottom:2px solid #333;}
+    .brand{display:flex;align-items:center;gap:1rem;}
+    .brand-title{margin:0;font-weight:800;font-size:1.35rem;letter-spacing:.02em;}
+    .tagline{margin:.15rem 0 0 0;font-weight:600;letter-spacing:.02em;}
+
+    .logo{width:60px;height:34px;flex:0 0 auto;}
+
+    .controls{display:inline-flex;gap:.5rem;align-items:center;}
+    .controls button{border:2px solid #555;background:#111;color:var(--fg);padding:.45rem .75rem;border-radius:.35rem;font-size:1rem;cursor:pointer;}
+    .controls button[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,255,208,.2);}
+    .sr-only{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;} main{padding-block:1.25rem 3rem;}
+    h1,h2,h3{line-height:1.25;margin:0 0 .6rem 0;}
+    h1{font-size:1.7rem;}
+    h2{font-size:1.35rem;margin-top:1.25rem;}
+    h3{font-size:1.15rem;margin-top:.9rem;}
+    p{margin:0 0 1rem 0;}
+    ul{margin:.25rem 0 1rem 1.2rem;}
+    li{margin:.25rem 0;}
+    .section{border-top:2px solid #333;padding-top:1rem;margin-top:1rem;}
+    p,li{max-width:74ch;}
+
+    dl{margin:.25rem 0 1rem 0;}
+    dt{font-weight:700;}
+    dd{margin:0 0 .5rem 0;}
+
+    footer{border-top:2px solid #333;margin-top:2rem;padding-top:1rem;}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="wrap topbar" role="banner">
+    <div class="brand" aria-label="Brand: Shianne Durdin">
+      <!-- Accessible inline eye logo with description -->
+      <svg class="logo" role="img" aria-labelledby="logoTitle logoDesc" viewBox="0 0 60 34" xmlns="http://www.w3.org/2000/svg" focusable="false">
+        <title id="logoTitle">Eye logo</title>
+        <desc id="logoDesc">A simple high-contrast eye icon. Below the logo, the words Blindness Is A Different Kind of Vision appear in clear text.</desc>
+        <path d="M30 2C13 2 2 17 2 17s11 15 28 15 28-15 28-15S47 2 30 2Z" fill="#111" stroke="#0ff" stroke-width="2"/>
+        <circle cx="30" cy="17" r="8.5" fill="#0ff"/>
+        <circle cx="30" cy="17" r="3.8" fill="#000"/>
+      </svg>
+      <div>
+        <p class="brand-title">Shianne Durdin</p>
+        <p class="tagline">Blindness Is A Different Kind of Vision</p>
+      </div>
+    </div>
+
+    <!-- Text size controls (up to 48px) -->
+    <div class="controls" role="group" aria-label="Text size controls">
+      <span id="sizeStatus" class="sr-only" aria-live="polite"></span>
+      <button type="button" data-size="20" aria-pressed="true" aria-label="Set text to default size 20 pixels">A</button>
+      <button type="button" data-size="24" aria-pressed="false" aria-label="Increase text to 24 pixels">A</button>
+      <button type="button" data-size="32" aria-pressed="false" aria-label="Increase text to 32 pixels">A</button>
+      <button type="button" data-size="40" aria-pressed="false" aria-label="Increase text to 40 pixels">A</button>
+      <button type="button" data-size="48" aria-pressed="false" aria-label="Increase text to 48 pixels">A</button>
+    </div>
+  </header>
+
+  <main id="content" class="wrap" role="main">
+    <!-- DESCRIPTION -->
+    <section class="section" aria-labelledby="desc-h1">
+      <h1 id="desc-h1">Description</h1>
+      <p>
+        As a child, I was fortunate to have attended a blind school where I received support in various aspects of my life such as assistive technology, braille courses and adaptive sports, however, I always lacked the comfort of having people I could talk to, who had the lived experience of a blind or low vision individual. And that is why as a support coach for the vision impaired, I not only offer personalised braille and screen reader training, tailored advice on pathways for the future, and strategies for a more independent daily life, I also offer mentorship. A space of understanding. A place where each and every one of my clients feels heard and validated. Because while blindness might mean lack of sight, it does not mean lack of vision.
+      </p>
+      <p>Online platform Zoom will be used for all appointments and programs.</p>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="section" aria-labelledby="programs-h2">
+      <h2 id="programs-h2">Programs</h2>
+
+      <h3>6 week introduction to navigating a computer using JAWS</h3>
+      <p>
+        This one-on-one online program provides weekly 45 minute sessions and costs a total of AUD $280 due before the beginning of the second session. The program involves navigating File Explorer and Word documents, connecting to internet and Bluetooth devices, configuring settings, accessing the internet via Google Chrome, various JAWS specific shortcuts, as well as anything the client would like to learn. </p>
+
+      <h3>6 week introduction to using iPad and iPhone with VoiceOver</h3>
+      <p>
+        This one-on-one online program provides weekly 45 minute sessions for a total cost of AUD $300 due before the beginning of the second session. The program explores sending messages, making calls, sending emails, opening and replying to emails and messages, configuring settings, navigating websites and well known apps, adding image descriptions to social media posts, navigating and exporting Pages documents, as well as anything the client would like to learn.
+      </p>
+
+      <h3>8 week Exploring Pathways program</h3>
+      <p>
+        This one-on-one online program involves daily living skills, goal setting and emotional support. The first session will explore your current, short term and long term goals as an individual with blindness or low vision, and every appointment will begin with a check in of what you feel you need for that session. The program provides weekly 45 minute sessions for a cost of AUD $300 due by the beginning of the third session.
+      </p>
+
+      <h3>4 week introduction to Basic Braille</h3>
+      <p>
+        This one-on-one online program provides weekly 45 minute sessions for a cost of AUD $200 due before the beginning of the second session. It explores the braille alphabet, as well as some maths symbols, and anything else the client would like to learn. Please note: braille paper and a braille machine is required for this program. Additional learning resources will be sent via post.
+      </p>
+
+      <p><strong>Note:</strong> Every program can be modified to meet the needs of the client.</p>
+      <p>Should you choose, you can also book individual sessions separate to any of these programs.</p>
+    </section>
+
+    <!-- INDIVIDUAL SESSIONS -->
+    <section class="section" aria-labelledby="individual-h2">
+      <h2 id="individual-h2">If You Book an Individual Session</h2>
+      <p><strong>Note:</strong> The information in this heading only applies if you are booking an individual session, separate from the programs listed above.</p>
+      <p>Each appointment will vary from between 30 minutes to 1 hour, depending on your preference.</p>
+      <p>Every appointment will begin with a check in of how you've been and what you feel you need from the session. Online communication platform Zoom will be used, and parents are more than welcome to be a part of these sessions.</p>
+      <p>Individual sessions typically cost AUD $25 for 30 minutes, AUD $35 for 45 minutes and AUD $45 for 1 hour, however costing is flexible. Invoices will be written and sent after each session.</p>
+    </section>
+
+    <!-- AVAILABILITY -->
+    <section class="section" aria-labelledby="availability-h2">
+      <h2 id="availability-h2">Availability and Hours</h2>
+      <dl>
+        <dt>Monday</dt><dd>Available from 4 PM-8 PM</dd>
+        <dt>Tuesday</dt><dd>Unavailable</dd>
+        <dt>Wednesday</dt><dd>Available from 4 PM-7 PM</dd> <dt>Thursday</dt><dd>Available from 4 PM-8:30 PM</dd>
+        <dt>Friday</dt><dd>Available from 4 PM-6:30 PM</dd>
+        <dt>Saturday</dt><dd>Available from 4 PM-8 PM</dd>
+        <dt>Sunday</dt><dd>Available from 10 AM-5 PM</dd>
+      </dl>
+      <p>All times listed above are relevant to Australian Central Standard Time.</p>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section class="section" aria-labelledby="registration-h2">
+      <h2 id="registration-h2">Registration</h2>
+      <p>Fill out the form below to register for a session or program. Your response will be forwarded to me via email and I will contact you within 7 business days regarding your registration.</p>
+
+      <!-- Embedded Google Form (no extra links or clutter) -->
+      <iframe
+        title="Registration form"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe9mwoFYklA6rcwiCISmw88I4VYha0BRCZm6GT8J6CEi1qwTA/viewform?embedded=true"
+        width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">
+      </iframe>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" aria-labelledby="contact-h2">
+      <h2 id="contact-h2">Get in Contact</h2>
+      <p>If you have any feedback or inquiries please don't hesitate to email <a href="mailto:shianne.blvcoach@gmail.com">shianne.blvcoach@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="wrap" role="contentinfo" aria-label="Footer">
+    <p>I do not currently hold any psychology, youth work or counselling qualifications. I am someone who seeks to share knowledge and independence tips with the next generation of people who are blind or have low vision through personal experience.</p>
+    <p>© <span id="year"></span> Shianne Durdin</p>
+  </footer>
+
+  <script>
+    (function(){
+      const root = document.documentElement;
+      const buttons = document.querySelectorAll('.controls button');
+      const status = document.getElementById('sizeStatus');
+
+      function setSize(px){ root.style.setProperty('--base-font', px + 'px');
+        buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.size === String(px))));
+        status.textContent = 'Text size set to ' + px + ' pixels';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => setSize(parseInt(btn.dataset.size, 10)));
+      });
+
+      setSize(20);
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
