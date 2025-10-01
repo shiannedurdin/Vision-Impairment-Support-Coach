@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shianne Durdin Vision Support Coach</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Programs and sessions offered by Shianne Durdin Vision Support Coach. Fully accessible, high-contrast, screen reader friendly.">
+  <style>
+    :root{
+      --base-font-size:18px;
+      --max-font-size:48px;
+      --min-font-size:16px;
+      --line-height:1.6;
+      --text-color:#000;
+      --bg-color:#fff;
+      --focus:#1a73e8;
+      --content-max:60rem;
+    }
+    html{background:var(--bg-color);}
+    body{
+      margin:0;
+      color:var(--text-color);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-size:var(--base-font-size);
+      line-height:var(--line-height);
+    }
+    a{color:#000; text-underline-offset:3px;}
+    a:focus, button:focus, iframe:focus{outline:3px solid var(--focus); outline-offset:3px;}
+
+  .skip-link{
+      position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip-link:focus{
+      position:static; width:auto; height:auto; padding:.5rem .75rem; background:#ff0; color:#000;
+    }
+
+    header, main, footer{width:100%;}
+    .wrap{max-width:var(--content-max); margin:0 auto; padding:1rem;}
+    header{border-bottom:2px solid #000; background:#fff;}
+
+    .controls{display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; margin:.5rem 0 1rem;}
+    .controls button{
+      border:2px solid #000; background:#fff; color:#000; font-size:1rem; padding:.5rem .75rem; cursor:pointer;
+    }
+    .controls button:disabled{opacity:.5; cursor:not-allowed;}
+    #fontStatus{margin-left:.25rem;}
+
+    h1, h2{line-height:1.3; margin:1.25rem 0 .75rem;}
+    .block{margin-bottom:1.25rem;}
+
+    /* Programs shown as a list, broken into small chunks */
+    .programs-list{list-style:none; padding:0; margin:0;}
+    .programs-list li{border:2px solid #000; padding:.75rem; margin-bottom:.75rem;}
+    .program-title{font-weight:700; display:block; margin-bottom:.25rem;}
+    .small-chunk{margin:.25rem 0;}
+
+    .hours-list{list-style:none; padding:0; margin:0;}
+    .hours-list li{padding:.25rem 0; border-bottom:1px solid #000;}
+    .hours-list li:last-child{border-bottom:none;}
+
+    footer{border-top:2px solid #000; background:#fff; margin-top:2rem;}
+    .disclaimer{font-size:.95em; margin:1rem 0;}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="wrap">
+      <h1>Shianne Durdin Vision Support Coach</h1>
+
+      <!-- Accessible text-based logo with description -->
+      <figure aria-labelledby="logo-caption">
+        <svg role="img" aria-labelledby="logo-title logo-desc" width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+          <title id="logo-title">Eye logo</title>
+          <desc id="logo-desc">A simple black outline of an eye with a solid pupil in the center.</desc>
+          <ellipse cx="60" cy="30" rx="50" ry="22" fill="none" stroke="#000" stroke-width="3"></ellipse>
+          <circle cx="60" cy="30" r="8" fill="#000"></circle>
+        </svg>
+        <figcaption id="logo-caption">Blindness Is A Different Kind of Vision</figcaption>
+      </figure>
+
+      <!-- Font size controls up to 48px -->
+      <div class="controls" aria-label="Text size controls">
+        <button type="button" id="decrease" aria-label="Decrease text size">A−</button>
+        <button type="button" id="increase" aria-label="Increase text size">A+</button>
+        <button type="button" id="reset" aria-label="Reset text size">Reset</button>
+        <span aria-live="polite" id="fontStatus">Current text size: 18 pixels.</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" role="main">
+    <section class="block" aria-labelledby="desc-heading">
+      <h2 id="desc-heading">Description</h2>
+      <p>
+        As a child, I was fortunate to have attended a blind school where I received support in various aspects of life with low vision such as assistive technology, braille courses and adaptive sports, however, I always lacked the comfort of having people I could talk to, who had the lived experience of a blind or low vision individual. And that is why as a support coach for the vision impaired, I not only offer personalised braille and screen reader training, tailored advice on pathways for the future, and strategies for a more independent daily life, I also offer mentorship. A space of understanding. A place where each and every one of my clients feels heard and validated. Because while blindness might mean lack of sight, it does not mean lack of vision.
+      </p>
+      <p>
+        Online platform Zoom will be used for all appointments and programs, all of which are designed to cater to blind and low vision individuals, as well as parents and allies.
+      </p>
+    </section>
+
+    <section class="block" aria-labelledby="programs-heading">
