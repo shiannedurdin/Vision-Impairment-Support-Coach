@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shianne Durdin Vision Support Coach</title>
+  <style>
+    :root { --base-font-size: 18px; --max-font-size: 48px; --min-font-size: 16px; }
+    html { font-size: var(--base-font-size); }
+    body {
+      margin: 0;
+      padding: 0 1rem 3rem 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #000;
+      background: #fff;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    header, main, footer { width: 100%; }
+
+    /* Skip link */
+    .skip-link { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus {
+      position: static; width: auto; height: auto; margin: 0.5rem 0 1rem 0; padding: 0.5rem 0.75rem;
+      border: 2px solid #000; background: #ff0; color: #000; display: inline-block;
+    }
+
+    /* Font size controls */
+    .controls { display: flex; gap: 0.5rem; margin: 0.5rem 0 1rem 0; }
+    .controls button {
+      font: inherit; padding: 0.5rem 0.75rem; border: 2px solid #000; background: #fff; cursor: pointer;
+    }
+    .controls button:focus { outline: 3px solid #000; outline-offset: 2px; }
+
+    h1, h2 { margin-top: 1.25rem; margin-bottom: 0.75rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.5rem 0; }
+    li p { margin: 0.25rem 0; }
+
+    a { color: #000; text-decoration: underline; }
+    a:focus { outline: 3px solid #000; outline-offset: 2px; background: #ff0; }
+
+    .section { border-top: 2px solid #000; padding-top: 1rem; margin-top: 1.5rem; }
+    .form-wrap { margin-top: 0.75rem; }
+    iframe { width: 100%; height: 1200px; border: 2px solid #000; }
+
+    footer { margin-top: 2rem; border-top: 2px solid #000; padding-top: 1rem; }
+
+    /* Visually hidden helper */
+    .visually-hidden {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="container">
+    <header aria-labelledby="site-title">
+      <h1 id="site-title">Shianne Durdin Vision Support Coach</h1>
+
+      <div class="controls" aria-label="Font size controls">
+        <button id="decrease" type="button" aria-label="Decrease font size">A−</button>
+        <button id="reset" type="button" aria-label="Reset font size">A</button>
+        <button id="increase" type="button" aria-label="Increase font size">A+</button>
+        <span id="size-status" class="visually-hidden" aria-live="polite"></span>
+      </div>
+
+      <!-- Inline, accessible logo (no external file needed) -->
+      <figure aria-labelledby="logo-title logo-caption">
+        <svg role="img" aria-labelledby="logo-title logo-desc" width="240" height="120" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+          <title id="logo-title">Business logo</title>
+          <desc id="logo-desc">Image description: A simple, high-contrast eye outline with a pupil.</desc>
+          <ellipse cx="120" cy="60" rx="95" ry="40" fill="none" stroke="#000" stroke-width="4"/>
+          <circle cx="120" cy="60" r="18" fill="#000"/>
+        </svg>
+        <figcaption id="logo-caption">Blindness Is A Different Kind of Vision</figcaption>
+      </figure>
+    </header>
+
+    <main id="main">
+      <section class="section" aria-labelledby="desc-heading">
+        <h2 id="desc-heading">Description</h2>
+        <p>
+          As a child, I was fortunate to have attended a blind school where I received support in various aspects of life with low vision such as assistive technology, braille courses and adaptive sports, however, I always lacked the comfort of having people I could talk to, who had the lived experience of a blind or low vision individual. And that is why as a support coach for the vision impaired, I not only offer personalised braille and screen reader training, tailored advice on pathways for the future, and strategies for a more independent daily life, I also offer mentorship. A space of understanding. A place where each and every one of my clients feels heard and validated. Because while blindness might mean lack of sight, it does not mean lack of vision.
+          Online platform Zoom will be used for all appointments and programs.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="programs-heading">
+        <h2 id="programs-heading">Programs</h2>
+        <ul role="list">
+          <li>
+            <p><strong>6 week introduction to navigating a computer using Jaws</strong></p>
+            <p>One-on-one online program. Weekly 45 minute sessions.</p>
+            <p>Total cost: AUD $280. Due before the beginning of the second session.</p>
+            <p>Topics: File Explorer, Word documents, creating and saving files, internet and Bluetooth connections, settings, Google Chrome, JAWS shortcuts, plus anything the client would like to learn.</p>
+          </li>
+          <li>
+            <p><strong>6 week introduction to using iPad and iPhone with VoiceOver</strong></p>
+            <p>One-on-one online program. Weekly 45 minute sessions.</p>
+            <p>Total cost: AUD $300. Due before the beginning of the third session.</p>
+            <p>Topics: emails and messages, calls, settings, navigating websites and well-known apps, navigating documents, plus anything the client would like to learn.</p>
+          </li>
+          <li>
+            <p><strong>8 week Exploring Pathways</strong></p>
+            <p>Weekly 45 minute sessions.</p>
+            <p>Total cost: AUD $300. Due by the beginning of the third session.</p>
+            <p>Includes daily living skills, goal setting, peer mentoring and emotional support. The first session explores your current, short-term and long-term goals. Each appointment starts with a check-in.</p>
+          </li>
+          <li>
+            <p><strong>4 week introduction to Basic Braille</strong></p>
+            <p>Weekly 45 minute sessions.</p>
+            <p>Total cost: AUD $200. Due before the second session.</p>
+            <p>Covers braille alphabet, basic maths symbols, plus anything the client would like to learn. Requires braille paper and machine. Additional resources sent via post.</p>
+          </li>
+          <li>
+            <p><strong>6 Week Introduction To Braille Music</strong></p>
+            <p>Weekly 45 minute sessions.</p>
+            <p>Total cost: AUD $330. Due before the second session.</p>
+            <p>Covers notation and rhythm, writing scales in braille, composing simple melodies, plus anything else the client would like to learn. Requires braille paper and machine. Resources sent via post.</p>
+          </li>
+          <li>
+            <p><strong>6 Week Intermediate iPad and iPhone Navigation Using VoiceOver</strong></p>
+            <p>One-on-one online program.</p>
+            <p>Total cost: AUD $330. Due before the second session.</p>
+            <p>Topics: VoiceOver shortcuts, downloading attachments, sending emails and messages with attachments, installing Be My Eyes and Seeing AI, Braille Screen Input mode, plus anything the client would like.</p>
+          </li>
+          <li>
+            <p><strong>6 Week Intermediate Braille Music</strong></p>
+            <p>Weekly 1 hour sessions.</p>
+            <p>Total cost: AUD $350. Due before the third session.</p>
+            <p>Topics: writing chords, composing piano music for both hands, key and time signatures, syncopated rhythms, piano score layout, repeats and dynamic markings, plus anything the client would like. Requires braille paper and machine. Resources sent via post.</p>
+          </li>
+          <li>
+            <p><strong>6 Week Intermediate Braille</strong></p>
+            <p>Weekly 1 hour sessions.</p> <p>Total cost: AUD $300. Due before the second session.</p>
+            <p>Topics: contractions (single dot combinations used for whole words), punctuation, intermediate maths symbols, brief history of braille, plus anything the client would like. Requires braille machine and paper. Resources sent via post.</p>
+          </li>
+        </ul>
+        <p><strong>Every program can be modified to meet the needs of the client.</strong></p>
+        <p>If you want other topics such as sports for the blind, orientation and mobility, or services for daily independence, you can book individual sessions separate from any program.</p>
+      </section>
+
+      <section class="section" aria-labelledby="individual-heading">
+        <h2 id="individual-heading">If You Book an Individual Session</h2>
+        <p>Note: This only applies if you are booking an individual session, separate from the programs above.</p>
+        <p>Each appointment will vary between 30 minutes to 1 hour, depending on your preference. Zoom will be used, and parents are welcome.</p>
+        <p>Costs: AUD $25 for 30 minutes, AUD $35 for 45 minutes, AUD $50 for 1 hour. Costs are flexible. Invoices sent after each session.</p>
+      </section>
+
+      <section class="section" aria-labelledby="availability-heading">
+        <h2 id="availability-heading">Availability and Hours</h2>
+        <ul aria-label="Weekly availability in Australian Central Standard Time">
+          <li>Monday: 4 PM–8 PM</li>
+          <li>Tuesday: Unavailable</li>
+          <li>Wednesday: 4 PM–7 PM</li>
+          <li>Thursday: 4 PM–8:30 PM</li>
+          <li>Friday: 4 PM–6:30 PM</li>
+          <li>Saturday: 4 PM–8 PM</li>
+          <li>Sunday: 10 AM–5 PM</li>
+        </ul>
+        <p>All times listed are Australian Central Standard Time.</p>
+      </section>
+
+      <section class="section" aria-labelledby="registration-heading">
+        <h2 id="registration-heading">Registration</h2>
+        <p>Fill out the form below to register for a session or program. Your response will be forwarded to me via email and I will contact you within 7 business days regarding your registration!</p>
+        <div class="form-wrap">
+          <iframe
+            title="Registration form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe9mwoFYklA6rcwiCISmw88I4VYha0BRCZm6GT8J6CEi1qwTA/viewform?embedded=true">
+          </iframe>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in Contact</h2>
+        <p>If you have any feedback or inquiries please don't hesitate to email <a href="mailto:shianne.blvcoach@gmail.com">shianne.blvcoach@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer aria-labelledby="disclaimer-heading">
+      <h2 id="disclaimer-heading">Disclaimer</h2>
+      <p>Disclaimer: I do not currently hold any psychology, youth work or counselling qualifications. I am someone who seeks to share knowledge and independence tips with the next generation of people who are blind or have low vision through personal experience.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const html = document.documentElement;
+      const statusEl = document.getElementById('size-status');
+      function currentSize() { return parseFloat(getComputedStyle(html).fontSize); }
+      function setSize(px) {
+        const min = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--min-font-size')) || 16;
+        const max = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--max-font-size')) || 48;
+        const clamped = Math.max(min, Math.min(max, px));
+        html.style.fontSize = clamped + 'px';
+        if (statusEl) statusEl.textContent = 'Font size set to ' + Math.round(clamped) + ' pixels';
+      }
+      document.getElementById('decrease').addEventListener('click', function () { setSize(currentSize() - 2); });
+      document.getElementById('reset').addEventListener('click', function () {
+        const base = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--base-font-size')) || 18;
+        setSize(base);
+      });
+      document.getElementById('increase').addEventListener('click', function () { setSize(currentSize() + 2); });
+    })();
+  </script>
+</body>
+</html>
