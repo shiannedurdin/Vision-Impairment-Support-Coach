@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shianne Durdin Vision Support Coach</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #000000; /* black */
+      --ink: #ffffff; /* white text */
+      --accent: #888888; /* subtle grey separators/outlines */
+      --maxw: 72ch;
+      --fs: 18px;      /* adjustable up to 48 via controls */
+      --radius: 8px;
+      --focus: #ffbf00;
+    }
+    html { font-size: var(--fs); -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--ink); text-decoration: underline; }
+    a:focus, button:focus, [tabindex]:focus {
+      outline: 3px solid var(--focus); outline-offset: 2px;
+    }
+
+    /* Skip link for keyboard/screen reader users */
+    .skip {
+      position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;
+    }
+    .skip:focus {
+      position: static; width: auto; height: auto; padding: .5rem 1rem;
+      background: var(--focus); color: #000; display: inline-block;
+    }
+
+    /* Header with centered embedded logo and clear business name */
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      border-bottom: 2px solid var(--accent);
+    }
+    .brand img {
+      display: block;
+      margin: 0 auto 1rem;
+      width: 160px; /* clear, centered logo */
+      height: auto;
+    }
+    .brand h1 {
+      margin: 0;
+      font-weight: 900;
+      font-size: 2.2rem;
+      color: var(--ink);
+    }
+    .divider {
+      height: 2px; background: var(--accent); max-width: 920px; margin: 1rem auto 0;
+    }
+
+    /* Accessible text-size controls */
+    .controls { display: flex; justify-content: center; padding: 1rem; }
+    .controls fieldset {
+      border: 2px solid var(--accent);
+      border-radius: var(--radius);
+      padding: .75rem 1rem;
+    }
+    .controls legend { padding: 0 .25rem; font-weight: 700; }
+    .controls .group { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .controls button {
+      font: inherit; border: 2px solid var(--accent); border-radius: 6px;
+      background: var(--bg); color: var(--ink); padding: .4rem .6rem; cursor: pointer;
+    }
+    .controls button:hover { background: #1a1a1a; }
+
+    /* Main content wrapper */
+    .wrap { max-width: var(--maxw); margin: 1rem auto; padding: 1rem; }
+    section { margin: 1.5rem 0; }
+    h2 { margin: 1rem 0 .5rem; color: var(--ink); }
+    p { margin: .6rem 0; }
+
+    /* Registration form box */
+    .form-wrap {
+      margin-top: .5rem; border: 2px solid var(--accent);
+      border-radius: var(--radius); overflow: hidden;
+    }
+    .form-wrap iframe { display: block; width: 100%; height: 1100px; border: 0; }
+
+    footer {
+      border-top: 2px solid var(--accent);
+      margin-top: 2rem; padding: 1rem; color: var(--ink);
+    }
+
+    /* Visually hidden utility */
+    .vh {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <header role="banner" aria-label="Site header">
+    <div class="brand" aria-labelledby="brand-title">
+      <!-- Embedded logo image (Base64 data URI) -->
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAADlRWNhQlgAAOVFanVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNj..."
+        alt="Logo: a stylised eye. Below the eye, text reads: Blindness Is A Different Kind of Vision.">
+      <h1 id="brand-title">Shianne Durdin Vision Support Coach</h1>
+    </div>
+    <div class="divider" aria-hidden="true"></div>
+
+    <div class="controls" role="region" aria-label="Text size controls">
+      <fieldset>
+        <legend>Text size</legend>
+        <div class="group" role="group" aria-label="Choose a text size">
+          <button type="button" data-size="18" aria-describedby="size-live">18 px (Default)</button>
+          <button type="button" data-size="22" aria-describedby="size-live">22 px</button>
+          <button type="button" data-size="26" aria-describedby="size-live">26 px</button>
+          <button type="button" data-size="32" aria-describedby="size-live">32 px</button>
+          <button type="button" data-size="40" aria-describedby="size-live">40 px</button>
+          <button type="button" data-size="48" aria-describedby="size-live">48 px (Max)</button>
+        </div>
+        <span id="size-live" class="vh" aria-live="polite"></span>
+      </fieldset>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" role="main">
+    <section aria-labelledby="desc-h">
+      <h2 id="desc-h">Description</h2>
+      <p>As a child, I was fortunate to have attended a blind school where I received support in various aspects of life with low vision such as assistive technology, braille courses and adaptive sports, however, I always lacked the comfort of having people I could talk to, who had the lived experience of a blind or low vision individual. And that is why as a support coach for the vision impaired, I not only offer personalised braille and screen reader training, tailored advice on pathways for the future, and strategies for a more independent daily life, I also offer mentorship. A space of understanding. A place where each and every one of my clients feels heard and validated. Because while blindness might mean lack of sight, it does not mean lack of vision.</p>
+      <p>Online platform Zoom will be used for all appointments and programs, all of which are designed to cater to blind and low vision individuals, as well as parents and allies.</p>
+    </section>
+
+    <section aria-labelledby="programs-h">
+      <h2 id="programs-h">Programs</h2>
+
+      <p><strong>6 week introduction to navigating a computer using Jaws</strong></p>
+      <p>This one-on-one online program provides weekly 45 minute sessions and costs a total of aud$300 due before the beginning of the second session. The program involves navigating file explorer and word documents, creating and saving files, connecting to internet and Bluetooth devices, configuring settings, accessing the internet via Google Chrome, various Jaws specific shortcuts, as well as anything the client would like to learn.</p>
+
+      <p><strong>6 week introduction to using iPad and iPhone with voice over</strong></p>
+      <p>This one-on-one online program provides weekly 45 minute sessions for a total cost of aud$300 due before the beginning of the third session. The program explores sending and replying to emails and messages, making calls, configuring settings, navigating websites and well-known apps, navigating documents, as well as anything the client would like to learn.</p>
+
+      <p><strong>8 week Exploring Pathways</strong></p>
+      <p>This one-on-one online program provides weekly 45 minute sessions for a cost of aud$300 due by the beginning of the third session.
+      The program involves daily living skills, goal setting, peer mentoring and emotional support. The first session will explore your current, short term and long term goals as an individual with blindness or low vision, and every appointment will begin with a check-in of what you feel you need for the session.</p>
+
+      <p><strong>4 week introduction to Basic Braille</strong></p>
+      <p>This one-on-one online program provides weekly 45 minute sessions for a cost of aud$230 due before the beginning of the second session. It explores the braille alphabet, basic Maths symbols, and anything else the client would like to learn.
+      Braille paper and a braille machine are required for this program. Additional learning resources will be sent via post.</p>
+
+      <p><strong>6 Week Introduction To Braille Music</strong></p>
+      <p>This one-on-one online program provides weekly 45 minute sessions for a cost of aud$350 due before the beginning of the second session.
+      The program explores basic notation and rhythm, writing scales in braille, composing simple melodies as well as anything the client would like to learn.
+      Braille paper and a braille machine are required for this program. Additional learning resources will be sent via post.</p>
+
+      <p><strong>6 Week Intermediate iPad and iPhone Navigation Using Voice Over</strong></p>
+      <p>This one-on-one online program costs aud$330 due before the beginning of the second session. The program explores various Voice Over shortcuts, downloading attachments within emails and messages, sending emails and messages with attachments, installing and using third party apps Be My Eyes and Seeing AI, using braille screen input mode (a mode which allows users to type on screen using braille entry), as well as anything the client would like to learn.</p>
+
+      <p><strong>6 Week Intermediate Braille Music</strong></p>
+      <p>This one-on-one online program provides weekly 1 hour sessions for a total cost of aud$390 due before the beginning of the third session.
+      The program explores writing chords in braille, composing piano music for left and right hands, key and time signatures and syncopated rhythms, how to set out a piano score, various symbols such as repeats and dynamic markings as well as anything the client would like to learn.
+      Braille paper and a braille machine are required for this program. Additional learning resources will be sent via post.</p>
+
+      <p><strong>6 Week Intermediate Braille</strong></p>
+      <p>This one-on-one online program provides weekly 1 hour sessions for a cost of aud$320 due before the beginning of the second session.
+      The program explores single combinations of dots that can be used to write entire words, known as contractions, punctuation markings, intermediate Maths symbols, a brief history of braille as well as anything the client would like to learn.
+      A braille machine and braille paper are required for this program. Additional learning resources will be sent via post.</p>
+
+      <p><strong>Every program can be modified to meet the needs of the client.</strong></p>
+      <p>If you have any other topics you may wish to discuss  when it comes to adapting to life with low vision such as sports for the blind, orientation and mobility, services that can assist with daily independence etc. you can also book individual sessions seperate to any of these programs.</p>
+    </section>
+
+    <section aria-labelledby="individual-h">
+      <h2 id="individual-h">If You Book an Individual Session</h2>
+      <p>Note: The
